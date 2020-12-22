@@ -1,0 +1,10 @@
+.footerLineContainer {
+    height: 10vh;
+    background-color: black;
+}
+
+.footerLine {
+    width: 0.3vw;
+    height: 70%;
+    background: linear-gradient(#ffffff, #000000);
+}

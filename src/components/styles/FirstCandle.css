@@ -1,0 +1,17 @@
+.middleCandle {
+
+    border: 5px solid black;
+    width: 100%;
+    height: 45px;
+}
+
+.sideCandle {
+    border: 2px solid black;
+    width: 100%;
+}
+.nopadding {
+    padding: 0 !important;
+}
+.bg-black{
+    background-color: black;
+}

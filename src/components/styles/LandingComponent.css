@@ -1,0 +1,35 @@
+.topPart {
+    height: 95vh;
+    background-color: black !important;
+}
+.bottomPart {
+    height: 5vh;
+    background-color: white;
+}
+.whiteLine{
+    width: 0.1vw;
+    height: 70%;
+    background: linear-gradient(black,black, #515050,black);
+}
+.blackLine{
+    width: 0.1vw;
+    height: 100%;
+    background-color: black;
+}
+.leftText{
+    color: white;
+    font-family: monospace;
+}
+.leftText h1{
+    font-weight: 100;
+    font-size: 65px;
+}
+.leftText p{
+    padding-top: 10px;
+    font-size: 17px;
+    text-align: justify;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}

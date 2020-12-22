@@ -1,0 +1,44 @@
+.text {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.text p {
+    background-color: #000000;
+    color: white;
+    font-size: 17px;
+    text-align: justify;
+    font-family: monospace;
+}
+
+.text h1 {
+    font-weight: 100;
+    font-size: 65px;
+    background-color: black;
+    color: white;
+    text-align: justify;
+    font-family: monospace;
+}
+.text a{
+    color: white;
+}
+.text ul{
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-align: justify;
+    font-family: monospace;
+    list-style-type: square;
+}
+.text li{
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-align: justify;
+    font-family: monospace;
+}
+.text .small{
+    font-size: 13px;
+    font-style: italic;
+}
