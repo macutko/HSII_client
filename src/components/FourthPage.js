@@ -3,11 +3,11 @@ import Candle from "./Candle";
 import TextHolder from "./TextHolder";
 import './styles/Page.css'
 
-export default class SecondPage extends React.Component {
+export default class FourthPage extends React.Component {
     render() {
         return (
             <>
-                <TextHolder x={[80, 0]}>
+                <TextHolder x={[60, 0]}>
                     {this.props.children}
                 </TextHolder>
                 <div className={"fader"}>

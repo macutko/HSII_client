@@ -2,14 +2,17 @@ import React from "react"
 import FirstPage from "./FirstPage";
 import SecondPage from "./SecondPage";
 import ThirdPage from "./ThirdPage";
+import FourthPage from "./FourthPage";
 import CalcForm from "./CalcForm";
+import {strings} from "./content/strings";
+import FifthPage from "./FifthPage";
 
 export default class BodyComponent extends React.Component {
     render() {
         return (
             <div style={{overflow: "hidden"}}>
                 <FirstPage>
-                    <h1>Founding Principles</h1>
+                    <h1>{strings.intro.title}</h1>
                     <p>
                         If I were to define my style of investing money by <a
                         href={"https://en.wikipedia.org/wiki/Benjamin_Graham"}> Benjamin Graham's </a> standards, I
@@ -18,6 +21,7 @@ export default class BodyComponent extends React.Component {
                         slow and steady ...lazy... investor. I am the guy that doesn't want to overthink his investing
                         or jump the
                         first window when the Dow Jones falls 500 points in a day. &#129299;
+
                     </p>
                     <p>
                         Therefore, my method of investing is the one of <i>Dollar Cost Averaging</i>. If you are not
@@ -67,7 +71,7 @@ export default class BodyComponent extends React.Component {
                 <ThirdPage>
                     <h1>Is that it?</h1>
                     <p>
-                        Well, technically yes ...but no. As you might have noticed I <b>REALLY</b> do not trust mysefl
+                        Well, technically yes ...but no. As you might have noticed I <b>REALLY</b> do not trust myself
                         as a financial expert.
                         Hence, I <i>solely</i> invest into index funds. In other words, I bet on the economy as a whole
                         rather than on a single company.
@@ -83,12 +87,12 @@ export default class BodyComponent extends React.Component {
                         a &#128169; show.
                     </p>
                     <p>
-                        So ideally, what you'd want to do is Dolar Cost average over an index of bonds and stocks and
+                        So ideally, what you'd want to do is Dollar Cost average over an index of bonds and stocks and
                         ideally in different economies (i.e. US and Europe). I hope you see how I made this logical
                         conclusion.
                     </p>
                 </ThirdPage>
-                <SecondPage>
+                <FourthPage>
                     <h1>Well...I think I got it, now what?</h1>
                     <p>
                         Well, you need to divide your monthly deposit amongst bonds and stocks in such a way that they
@@ -96,22 +100,22 @@ export default class BodyComponent extends React.Component {
                         <a href={"https://en.wikipedia.org/wiki/Ray_Dalio"}>Ray Dalio </a>has his 'All Weather
                         portfolio' that allegedly goes something like this:
                     </p>
-                        <ul>
-                            <li>30% Stocks
-                            </li>
-                            <li>55% Fixed Income <br/>
-                                <ul>
-                                    <li>40% Long Term Bonds</li>
-                                    <li>15% Intermediate Term Bonds</li>
-                                </ul>
-                            </li>
-                            <li>15% Commodities
-                                <ul>
-                                    <li>7.5% Gold</li>
-                                    <li>7.5% Broad Diversified</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <ul>
+                        <li>30% Stocks
+                        </li>
+                        <li>55% Fixed Income <br/>
+                            <ul>
+                                <li>40% Long Term Bonds</li>
+                                <li>15% Intermediate Term Bonds</li>
+                            </ul>
+                        </li>
+                        <li>15% Commodities
+                            <ul>
+                                <li>7.5% Gold</li>
+                                <li>7.5% Broad Diversified</li>
+                            </ul>
+                        </li>
+                    </ul>
 
                     <p>
                         So, I guess that's it. All you have to do is make sure you invest every month into your account
@@ -123,34 +127,34 @@ export default class BodyComponent extends React.Component {
                     <p className={"small"}>
                         *To be truthfully honest my split is as follow. Heads up, I invest solely with Vangaurd.
                     </p>
-                        <ul>
-                            <li>50% Stocks
-                                <ul>
-                                    <li><a
-                                        href={"https://www.vanguardinvestor.co.uk/investments/vanguard-s-and-p-500-ucits-etf-usd-distributing/overview"}>25%
-                                        VUSA</a></li>
-                                    <li><a
-                                        href={"https://www.vanguardinvestor.co.uk/investments/vanguard-ftse-all-world-high-dividend-yield-ucits-etf-usd-distributing/overview"}>25%
-                                        VHYL</a></li>
-                                </ul>
-                            </li>
-                            <li>50% Fixed Income <br/>
-                                <ul>
-                                    <li><a
-                                        href={"https://www.vanguardinvestor.co.uk/investments/vanguard-uk-government-bond-index-fund-gbp-acc"}>7.5%
-                                        U.K. Government Bond Index Fund - Accumulation </a></li>
-                                    <li><a
-                                        href={"https://www.vanguardinvestor.co.uk/investments/vanguard-global-bond-index-fund-gbp-hedged-acc"}>30%
-                                        Global Bond Index Fund - Hedged Accumulation
-                                    </a></li>
-                                    <li><a
-                                        href={"https://www.vanguardinvestor.co.uk/investments/vanguard-euro-investment-grade-bond-index-fund-gbp-hedged-acc/overview"}>12.5%
-                                        Euro Investment Grade Bond Index Fund - Hedged Accumulation</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                </SecondPage>
-                <ThirdPage>
+                    <ul>
+                        <li>50% Stocks
+                            <ul>
+                                <li><a
+                                    href={"https://www.vanguardinvestor.co.uk/investments/vanguard-s-and-p-500-ucits-etf-usd-distributing/overview"}>25%
+                                    VUSA</a></li>
+                                <li><a
+                                    href={"https://www.vanguardinvestor.co.uk/investments/vanguard-ftse-all-world-high-dividend-yield-ucits-etf-usd-distributing/overview"}>25%
+                                    VHYL</a></li>
+                            </ul>
+                        </li>
+                        <li>50% Fixed Income <br/>
+                            <ul>
+                                <li><a
+                                    href={"https://www.vanguardinvestor.co.uk/investments/vanguard-uk-government-bond-index-fund-gbp-acc"}>7.5%
+                                    U.K. Government Bond Index Fund - Accumulation </a></li>
+                                <li><a
+                                    href={"https://www.vanguardinvestor.co.uk/investments/vanguard-global-bond-index-fund-gbp-hedged-acc"}>30%
+                                    Global Bond Index Fund - Hedged Accumulation
+                                </a></li>
+                                <li><a
+                                    href={"https://www.vanguardinvestor.co.uk/investments/vanguard-euro-investment-grade-bond-index-fund-gbp-hedged-acc/overview"}>12.5%
+                                    Euro Investment Grade Bond Index Fund - Hedged Accumulation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </FourthPage>
+                <FifthPage>
                     <h1>How to divide the sum so that I keep the portfolio?</h1>
                     <p>
                         As I said, I'm a software engineer. So here you go, here is a form. Fill in the Fields
@@ -162,7 +166,24 @@ export default class BodyComponent extends React.Component {
 
                     <CalcForm/>
 
-                </ThirdPage>
+                    <p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        Simple, eh? Every month you run this calculator with the updated values; the amount you are
+                        going to deposit, the current value of your products, and the desired value you want your
+                        products to have as a percentage (i.e. 50% = 0.5). Hopefully this very brief run down makes
+                        sense.
+                        If not, feel free to reach out and if there is enough interest I might expand on this
+                        project. &#129299;
+                        <br/>
+                        If you struggle with definitions (i.e. ETF, Index fund etc.) I highly recommend Google. There is
+                        a lot of answers within 35s and usually sites like Investopedia or Wikipedia come up first.
+                        However, if you want more information on investing I highly recommend getting <i>The intelligent
+                        investor</i> by Ben Graham.
+                    </p>
+
+                </FifthPage>
             </div>
 
         )

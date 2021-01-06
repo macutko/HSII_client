@@ -14,6 +14,7 @@ export default class ProductFieldForm extends React.Component {
         }
     }
 
+
     render() {
         return (
             <>
@@ -23,12 +24,17 @@ export default class ProductFieldForm extends React.Component {
                             <div className={"col-sm-2"}>
                                 <Form.Label>Product {this.props.productID + 1}</Form.Label>
                             </div>
-                            <div className={"col-sm-5"}>
+                            <div className={"col-sm-4"}>
                                 <Form.Control onChange={this.changeProductValue} type="number"
                                               placeholder="Current value of product"/>
                             </div>
-                            <div className={"col-sm-5"}>
-                                <Form.Control min={"0"} max={"1"} onChange={this.changeProductPercentage} type="number" placeholder="Desired Percentage (in decimal)"/>
+                            <div className={"col-sm-4"}>
+                                <Form.Control min={"0"} max={"1"} onChange={this.changeProductPercentage} type="number"
+                                              placeholder="Desired Percentage (in decimal)"/>
+                            </div>
+                            <div className={"col-sm-2"}>
+                                {this.props.value[this.props.productID] ?
+                                    <Form.Label>{this.props.value[this.props.productID] * this.props.deposit}</Form.Label> : null}
                             </div>
                         </div>
                     </div>

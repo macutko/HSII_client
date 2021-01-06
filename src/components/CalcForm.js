@@ -11,7 +11,8 @@ export default class CalcForm extends React.Component {
             products: 3,
             deposit: 0,
             productValues: {},
-            productPercentages: {}
+            productPercentages: {},
+            productPortions: {},
 
         }
     }
@@ -77,6 +78,9 @@ export default class CalcForm extends React.Component {
             .then((response) => {
                 // this.props.updateOutput(response)
                 console.log(response.data)
+                this.setState({
+                    productPortions: response.data.division_perc
+                })
 
             })
             .catch((error) => {
@@ -89,7 +93,7 @@ export default class CalcForm extends React.Component {
 
         let rows = [];
         for (let i = 0; i < this.state.products; i++) {
-            rows.push(<ProductFieldForm addProductPercentage={this.changeProductPercentages}
+            rows.push(<ProductFieldForm addProductPercentage={this.changeProductPercentages} value={this.state.productPortions} deposit={this.state.deposit}
                                         addProductValue={this.changeProductValue} productID={i} key={i}/>)
         }
         return (
