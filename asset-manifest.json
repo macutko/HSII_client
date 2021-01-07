@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/HSII_client/static/css/main.9e431e02.chunk.css",
-    "main.js": "/HSII_client/static/js/main.f8cc405c.chunk.js",
-    "main.js.map": "/HSII_client/static/js/main.f8cc405c.chunk.js.map",
+    "main.js": "/HSII_client/static/js/main.375cff94.chunk.js",
+    "main.js.map": "/HSII_client/static/js/main.375cff94.chunk.js.map",
     "runtime-main.js": "/HSII_client/static/js/runtime-main.b733685e.js",
     "runtime-main.js.map": "/HSII_client/static/js/runtime-main.b733685e.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/HSII_client/static/css/2.20aa2d7b.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.041465d2.chunk.js",
     "static/css/main.9e431e02.chunk.css",
-    "static/js/main.f8cc405c.chunk.js"
+    "static/js/main.375cff94.chunk.js"
   ]
 }
