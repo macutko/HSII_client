@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/HSII_client/static/css/main.9e431e02.chunk.css",
-    "main.js": "/HSII_client/static/js/main.375cff94.chunk.js",
-    "main.js.map": "/HSII_client/static/js/main.375cff94.chunk.js.map",
+    "main.js": "/HSII_client/static/js/main.27bf23e5.chunk.js",
+    "main.js.map": "/HSII_client/static/js/main.27bf23e5.chunk.js.map",
     "runtime-main.js": "/HSII_client/static/js/runtime-main.b733685e.js",
     "runtime-main.js.map": "/HSII_client/static/js/runtime-main.b733685e.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/HSII_client/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.041465d2.chunk.js": "/HSII_client/static/js/2.041465d2.chunk.js",
-    "static/js/2.041465d2.chunk.js.map": "/HSII_client/static/js/2.041465d2.chunk.js.map",
+    "static/js/2.009eafee.chunk.js": "/HSII_client/static/js/2.009eafee.chunk.js",
+    "static/js/2.009eafee.chunk.js.map": "/HSII_client/static/js/2.009eafee.chunk.js.map",
     "index.html": "/HSII_client/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/HSII_client/static/css/2.20aa2d7b.chunk.css.map",
     "static/css/main.9e431e02.chunk.css.map": "/HSII_client/static/css/main.9e431e02.chunk.css.map",
-    "static/js/2.041465d2.chunk.js.LICENSE.txt": "/HSII_client/static/js/2.041465d2.chunk.js.LICENSE.txt"
+    "static/js/2.009eafee.chunk.js.LICENSE.txt": "/HSII_client/static/js/2.009eafee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b733685e.js",
     "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.041465d2.chunk.js",
+    "static/js/2.009eafee.chunk.js",
     "static/css/main.9e431e02.chunk.css",
-    "static/js/main.375cff94.chunk.js"
+    "static/js/main.27bf23e5.chunk.js"
   ]
 }
