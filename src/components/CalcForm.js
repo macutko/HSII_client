@@ -13,7 +13,7 @@ export default class CalcForm extends React.Component {
             productValues: {},
             productPercentages: {},
             productPortions: {},
-
+            fetching: false
         }
     }
 
@@ -67,6 +67,10 @@ export default class CalcForm extends React.Component {
             return
         }
 
+        this.setState({
+            fetching: true
+        })
+
 
         axiosInstance.get("/calculate", {
             params: {
@@ -79,7 +83,8 @@ export default class CalcForm extends React.Component {
                 // this.props.updateOutput(response)
                 console.log(response.data)
                 this.setState({
-                    productPortions: response.data.division_perc
+                    productPortions: response.data.division_perc,
+                    fetching: false
                 })
 
             })
@@ -93,8 +98,12 @@ export default class CalcForm extends React.Component {
 
         let rows = [];
         for (let i = 0; i < this.state.products; i++) {
-            rows.push(<ProductFieldForm addProductPercentage={this.changeProductPercentages} value={this.state.productPortions} deposit={this.state.deposit}
-                                        addProductValue={this.changeProductValue} productID={i} key={i}/>)
+            rows.push(
+                <ProductFieldForm addProductPercentage={this.changeProductPercentages}
+                                  value={this.state.productPortions} deposit={this.state.deposit}
+                                  addProductValue={this.changeProductValue} fetching={this.state.fetching}
+                                  productID={i} key={i}/>
+            )
         }
         return (
             <>
