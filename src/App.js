@@ -2,15 +2,18 @@ import React from 'react';
 import './App.css';
 import Parallax from "./components/Parallax";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Helmet} from "react-helmet";
+import {BrowserView, MobileView} from "react-device-detect";
 
 function App() {
     return (
         <div>
-            <Helmet>
-                <meta name="theme-color" content="#000000"/>
-            </Helmet>
-            <Parallax/>
+            <MobileView>
+                <h1> Nope, I will not render for phones &#128514;</h1>
+            </MobileView>
+            <BrowserView>
+                <Parallax/>
+            </BrowserView>
+
         </div>
     );
 }
