@@ -39,7 +39,11 @@ export default class ProductFieldForm extends React.Component {
                             <div className={"col-sm-2 d-flex align-items-center justify-content-center"}>
 
                                 {this.props.fetching ? <ReactLoading type={"bars"} color={"grey"}/> :
-                                    <Form.Label>{this.props.value[this.props.productID] * this.props.deposit ? (this.props.value[this.props.productID] * this.props.deposit).toFixed(2) : null}</Form.Label>
+                                    <Form.Label>
+                                        {this.props.value[this.props.productID] * this.props.deposit ?
+                                        (this.props.value[this.props.productID] * this.props.deposit).toFixed(2) :
+                                        null}
+                                    </Form.Label>
                                 }
                             </div>
 

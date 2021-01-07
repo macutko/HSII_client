@@ -1,5 +1,5 @@
 const config = {
-    baseURL: "http://hsii-server.herokuapp.com/",
+    baseURL: "https://hsii-server.herokuapp.com/",
 };
 
 export default config;
