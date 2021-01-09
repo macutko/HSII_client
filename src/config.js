@@ -1,5 +1,5 @@
 const config = {
-    baseURL: "https://hsii-server.herokuapp.com/",
+    baseURL: "http://localhost:1010/",
 };
 
 export default config;
